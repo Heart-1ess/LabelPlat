@@ -1,0 +1,18 @@
+title: Named Entity Recognition
+type: community
+group: Natural Language Processing
+order: 3
+image: /static/templates/named-entity-recognition.png
+details: <h1>Extract named entities from text</h1>
+config: |
+  <View>
+    <Labels name="label" toName="text">
+      <Label value="人名" background="red"/>
+      <Label value="组织" background="darkorange"/>
+      <Label value="地点" background="orange"/>
+      <Label value="其他" background="green"/>
+    </Labels>
+
+    <Text name="text" value="$text"/>
+  </View>
+
